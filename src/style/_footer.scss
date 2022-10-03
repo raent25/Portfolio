@@ -1,0 +1,16 @@
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    flex-wrap: wrap;
+}
+.footer-link{
+    color: $white;
+    font-size: 25px;
+    padding: 10px;
+}
+.footer-link:hover{
+    color: $linkColor;
+
+}
