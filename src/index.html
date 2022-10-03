@@ -13,20 +13,30 @@
 </head>
 
 <body>
-  <header>
-    <div class="logo"></div>
-      <p class="desc"></p>
+  <header class="header">
+    <nav class="nav">
+      <a href="" class="nav__item">Portfolio</a>
+      <a href="" class="nav__item">Skills</a>
+      <a href="" class="nav__item">Contacts</a>
+    </nav>
+    <div class="header-info">
+      <p class="header-title">Homeniuk Vladyslav</p>
+    </div>
+    <video autoplay muted loop preload="auto" class="video-bg">
+      <!-- <source type="video/webm" src="img/bg-video.mp4"> -->
+      <source type="video/mp4" src="img/bg-video.mp4">
+    </video>
   </header>
 
   <main>
-      <div class="works-wrap">
+    <div class="works-wrap">
       <div class="works">
-        <a class="item" id="dorohenko"  href="https://doroshenko-school.com/" target="_blank">
+        <a class="item" id="dorohenko" href="https://doroshenko-school.com/" target="_blank">
           <div class="item__img"><img src="img/doroshenko.jpg" alt=""></div>
           <div class="item__title">Doroshenko-school</div>
           <p class="item__desc">Школа англійської мови</p>
         </a>
-        <a class="item"  href="http://velesservices.com/" target="_blank">
+        <a class="item" href="http://velesservices.com/" target="_blank">
           <div class="item__img"><img src="img/veles.jpg" alt=""></div>
           <div class="item__title">VELES SERVICES KFT</div>
           <p class="item__desc">Логістична компанія</p>
@@ -35,19 +45,78 @@
           <div class="item__img"><img src="img/chornohora.jpg" alt=""></div>
           <div class="item__title">Chornohora Mountain Range</div>
           <p class="item__desc">інтерактивний сайт про марштрут через Чорногірський хребет в Карпатах</p>
-      </a>
-        <a class="item"  href="https://raent25.github.io/Gvardis/dist/index.html" target="_blank">
+        </a>
+        <a class="item" href="https://raent25.github.io/Gvardis/dist/index.html" target="_blank">
           <div class="item__img"><img src="img/gvardis.jpg" alt=""></div>
           <div class="item__title">Gvardis</div>
           <p class="item__desc">Охоронна фірма</p>
         </a>
       </div>
     </div>
-  </main>
+    <div class="skills">
+      <div class="skill">
+        <img src="img/skills/html.png" alt="" class="skill__img">
+        <p class="skill__name">HTML</p>
+      </div>
+      <div class="skill">
+        <img src="img/skills/css.png" alt="" class="skill__img">
+        <p class="skill__name">CSS</p>
+      </div>
+      <div class="skill">
+        <img src="img/skills/js.png" alt="" class="skill__img">
+        <p class="skill__name">JavaScript</p>
+      </div>
+      <div class="skill">
+        <img src="img/skills/php.png" alt="" class="skill__img">
+        <p class="skill__name">PHP</p>
+      </div>
+      <div class="skill">
+        <img src="img/skills/jquery.png" alt="" class="skill__img">
+        <p class="skill__name">Jquery</p>
+      </div>
+      <div class="skill">
+        <img src="img/skills/Bootstrap.png" alt="" class="skill__img">
+        <p class="skill__name">Bootstrap</p>
+      </div>
+      <div class="skill">
+        <img src="img/skills/grid.png" alt="" class="skill__img">
+        <p class="skill__name">Grid</p>
+      </div>
+      <div class="skill">
+        <img src="img/skills/scss.png" alt="" class="skill__img">
+        <p class="skill__name">Scss</p>
+      </div>
+      <div class="skill">
+        <img src="img/skills/wordpress.png" alt="" class="skill__img">
+        <p class="skill__name">WordPress</p>
+      </div>
+      <div class="skill">
+        <img src="img/skills/webpack.png" alt="" class="skill__img">
+        <p class="skill__name">Webpack</p>
+      </div>
+      <div class="skill">
+        <img src="img/skills/gulp.png" alt="" class="skill__img">
+        <p class="skill__name">Gulp</p>
+      </div>
+      <div class="skill">
+        <img src="img/skills/github.png" alt="" class="skill__img">
+        <p class="skill__name">GitHub</p>
+      </div>
+      <div class="skill">
+        <img src="img/skills/figma.png" alt="" class="skill__img">
+        <p class="skill__name">Figma</p>
+      </div>
+      <div class="skill">
+        <img src="img/skills/photoshop.png" alt="" class="skill__img">
+        <p class="skill__name">PhotoShop</p>
+      </div>
 
+    </div>
+  </main>
   <footer>
     <div class="image"></div>
   </footer>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 </body>
 
 </html>

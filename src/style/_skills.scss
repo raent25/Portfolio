@@ -1,0 +1,21 @@
+.skills {
+    max-width: 100%;
+    padding: 100px 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.skill {
+    padding: 5px;
+    transition-duration: 0.5s;
+}
+.skill:hover {
+    transform: translateY(-15px);
+}
+.skill__img {
+    height: 100px;
+}
+.skill__name {
+    color: $white;
+    text-align: center;
+}

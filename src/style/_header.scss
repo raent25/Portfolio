@@ -1,40 +1,72 @@
-.works-wrap{
+.header {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    transition-duration: 1s;
+}
+.header.active
+{
+    height: 0;
+}
+.nav.active
+{
+    transform: translateY(-150%);
+}
+
+.nav {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    padding: 30px 0;
+    z-index: 20;
+    background: linear-gradient(90deg, rgba(2,0,36,0.5) 0%, rgba(21,57,86,0.3) 50%, rgba(0,0,0,0.5) 100%);
+    transition-duration: 1s;
 }
-.works{
-display: grid;
-grid-template-columns: repeat(4, 300px);
-grid-template-rows: 1fr;
-grid-column-gap: 15px;
-grid-row-gap: 15px;
+.nav__item {
+    padding: 5px 50px;
+    position: relative;
+    display: inline;
+    color: $white;
+    font-size: 18px;
+    border-bottom: 4px dashed $pr;
 }
-.item{
-    background-color: rgba($color: #fff, $alpha: 0.05);
+.nav__item:hover{
+    // transform: translateY(-2px);
+    border-bottom: 4px dashed $linkColor;
+    color: $linkColor;
+}
+.video-bg{
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.header-info {
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    position: relative;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    flex-direction: column;
-    transition-duration: 0.5s;
+    transform: translateY(-120px);
 }
-.item:hover{
-    transform: scale(1.1);
+.header-title {
+    text-transform: uppercase;
+    font-size: 70px;
+    color: $white;
+    letter-spacing: 40px;
+    font-weight: 300;
+    color: $linkColor;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    
 }
-.item__title{
-    margin: 20px 0 0 0 ;
-    color:$white;
-    text-align: center;
-    font-weight: 800;
-}
-.item__desc{
-    color:$white;
-    text-align: center;
-    font-size: 14px;
-    font-weight: 400;
-    color: $whiteDark;
-}
-.item__img img{
- width: 100%;
- max-width: 300px;
+.header-title.active{
+    transform: translateX(-150%);
 }
